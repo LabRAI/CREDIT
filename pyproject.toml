@@ -1,0 +1,27 @@
+[project]
+name = "certified"
+version = "0.1.0"
+description = "A flexible deep learning project framework using Ray, Hydra, and WandB."
+requires-python = ">=3.9"
+dependencies = [
+    "ray[tune]",
+    "hydra-core",
+    "wandb",
+    "torch",
+    "torchvision",
+    "torchaudio",
+    "transformers",
+    "datasets",
+    "scikit-learn",
+    "pandas",
+    "omegaconf",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["certified*"]
+exclude = ["conf*", "outputs*", "wandb*"]
