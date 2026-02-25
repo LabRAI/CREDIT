@@ -2,6 +2,22 @@
 
 This repository provides the official implementation of the paper: _"CREDIT: Certified Ownership Verification of Deep Neural Networks Against Model Extraction Attacks"_
 
+## Citation
+
+If you find this work helpful, please consider citing our paper. We sincerely appreciate your support and interest in our work.
+
+```bibtex
+@misc{shen2026credit,
+      title={CREDIT: Certified Ownership Verification of Deep Neural Networks Against Model Extraction Attacks}, 
+      author={Bolin Shen and Zhan Cheng and Neil Zhenqiang Gong and Fan Yao and Yushun Dong},
+      year={2026},
+      eprint={2602.20419},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2602.20419}, 
+}
+```
+
 ## Quick Start
 
 We use `uv` to manage Python environments and dependencies, which offers the most convenient and reproducible way to set
@@ -51,6 +67,19 @@ Before running experiments, make sure you have already trained:
 - an independent model (a reference model trained independently)
 
 With these prepared, CREDIT can be deployed seamlessly for verification and defense evaluation.
+
+**Output Example**:
+
+```
+[INFO] Running function: effectiveness()
+
+{
+    'baseline_name': 'CREDIT', 'baseline_model_name': 'resnet', 'tau': 100.0, 'auc': 1.0,
+    'mi_sus_all': array([121.3, 118.7, 116.4,  84.2,  80.5,  79.1]),
+    'sus_label': array([1, 1, 1, 0, 0, 0]),
+    'pred_label': array([1, 1, 1, 0, 0, 0]), 'k': 5, 'n': 1000
+}
+```
 
 ## Project Structure
 
