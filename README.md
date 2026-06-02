@@ -7,14 +7,14 @@ This repository provides the official implementation of the paper: _"CREDIT: Cer
 If you find this work helpful, please consider citing our paper. We sincerely appreciate your support and interest in our work.
 
 ```bibtex
-@misc{shen2026credit,
-      title={CREDIT: Certified Ownership Verification of Deep Neural Networks Against Model Extraction Attacks}, 
-      author={Bolin Shen and Zhan Cheng and Neil Zhenqiang Gong and Fan Yao and Yushun Dong},
-      year={2026},
-      eprint={2602.20419},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2602.20419}, 
+@inproceedings{shen2026credit,
+  title = {{CREDIT}: Certified Ownership Verification of Deep Neural Networks Against Model Extraction Attacks},
+  author = {Shen, Bolin and Cheng, Zhan and Gong, Neil Zhenqiang and Yao, Fan and Dong, Yushun},
+  booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
+  series = {Proceedings of Machine Learning Research},
+  publisher = {PMLR},
+  year = {2026},
+  url = {https://arxiv.org/abs/2602.20419}
 }
 ```
 
